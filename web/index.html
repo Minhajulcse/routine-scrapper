@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#0a3f29">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+<title>BAIUST Law Routine</title>
+</head>
+<body>
+
+<!-- Shown instead of the app on desktop-size screens -->
+<div id="gate" role="alert">
+  <img src="icons/baiust-logo.png" alt="BAIUST" width="96">
+  <h1>Made for phones</h1>
+  <p>The BAIUST Routine is designed for mobile screens. Open this page on your phone to continue.</p>
+</div>
+
+<div id="app">
+  <header class="top">
+    <img class="logo" src="icons/baiust-logo.png" alt="BAIUST logo" width="40" height="42">
+    <div class="titles">
+      <h1>BAIUST Routine</h1>
+      <p id="sub">Department of Law</p>
+    </div>
+    <button id="exportBtn" class="pdf-btn" aria-label="Download routine as PDF">
+      <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+      PDF
+    </button>
+  </header>
+
+  <main id="main">
+    <section id="tab-schedule" class="tab active">
+      <div class="hero">
+        <button id="filterBtn" class="filter-bar" aria-haspopup="dialog">
+          <span class="fl-k">Viewing</span><span id="filterLabel" class="fl-v">—</span>
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <button id="next" class="next" aria-live="polite"></button>
+      </div>
+      <nav id="days" class="days" aria-label="Day"></nav>
+      <div id="list" class="list"></div>
+    </section>
+
+    <section id="tab-teachers" class="tab">
+      <h2 class="page-h">Faculty</h2>
+      <input id="tSearch" class="search" type="search" placeholder="Search by name or initial" autocomplete="off">
+      <div id="tList" class="people"></div>
+    </section>
+
+    <section id="tab-rooms" class="tab">
+      <h2 class="page-h">Rooms</h2>
+      <nav id="rDays" class="days flat"></nav>
+      <nav id="rSlots" class="chips scroll"></nav>
+      <h3 class="h3">Available</h3><div id="rFree" class="chips wrap"></div>
+      <h3 class="h3">Occupied</h3><div id="rBusy" class="chips wrap"></div>
+    </section>
+
+    <section id="tab-dev" class="tab">
+      <h2 class="page-h">Developer</h2>
+      <article class="dev">
+        <div class="dev-top">
+          <span class="dev-photo"><img src="icons/developer.jpg" alt="Minhajul Islam" width="120" height="120" decoding="async"></span>
+          <h3>Minhajul Islam</h3>
+          <p>CSE, Daffodil International University</p>
+        </div>
+        <dl class="dev-list">
+          <div><dt>Location</dt><dd>Dhaka, Bangladesh</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:minhajul.cse.diu@gmail.com">minhajul.cse.diu@gmail.com</a></dd></div>
+          <div><dt>Portfolio</dt><dd><a href="https://minhajul-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">minhajul-portfolio.vercel.app</a></dd></div>
+        </dl>
+        <a class="dev-cta" href="https://minhajul-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
+          Visit portfolio
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+      <p class="fine">Class routine data comes from the official BAIUST routine sheet. Always confirm changes with your department.</p>
+    </section>
+  </main>
+
+  <nav class="bottom" role="tablist" id="bottom">
+    <i class="ind" aria-hidden="true"></i>
+    <button data-tab="schedule" class="on" role="tab"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Schedule</button>
+    <button data-tab="teachers" role="tab"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Faculty</button>
+    <button data-tab="rooms" role="tab"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v17"/><path d="M3 21h18"/><circle cx="15" cy="12" r=".8" fill="currentColor"/></svg>Rooms</button>
+    <button data-tab="dev" role="tab"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>Developer</button>
+  </nav>
+
+  <div id="scrim" class="scrim"></div>
+  <aside id="sheet" class="sheet" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="grab"></div>
+    <div id="sheetBody"></div>
+  </aside>
+</div>
+<script src="export.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "NAH": {"name": "Dr. Md. Nayem Alimul Hyder", "title": "Associate Professor and Head of the Department", "group": "In-House"},
+  "MRK": {"name": "Mst. Rezwana Karim", "title": "Assistant Professor", "group": "In-House"},
+  "DKR": {"name": "Dipannita Kundu Rumki", "title": "Assistant Professor", "group": "In-House"},
+  "TT":  {"name": "Tanjila Tamanna", "title": "Assistant Professor & Program Coordinator", "group": "In-House"},
+  "SBA": {"name": "Shadab Bin Ashraf", "title": "Assistant Professor", "group": "In-House"},
+  "NIN": {"name": "Nadia Islam Nody", "title": "Lecturer", "group": "In-House"},
+  "MSA": {"name": "Md Shamim Ahmed", "title": "Lecturer", "group": "In-House"},
+  "LDW": {"name": "Lamia Dilshad Waziha", "title": "Lecturer", "group": "In-House"},
+  "SR":  {"name": "Saimur Rahman", "title": "Lecturer", "group": "In-House"},
+  "SBF": {"name": "Sadd Been Hossain Fahim", "title": "Lecturer", "group": "In-House"},
+  "NAB": {"name": "Nafis Ahmed Bhuiyan", "title": "Lecturer, Dept. of Eng, BAIUST (Sec A)", "group": "Inter-Department"},
+  "ANR": {"name": "Anisur Rahman", "title": "Lecturer, Dept. of Eng, BAIUST (Sec B)", "group": "Inter-Department"},
+  "SBK": {"name": "Saad Bin Kamal", "title": "Lecturer, Dept. of CSE, BAIUST (Sec A + B)", "group": "Inter-Department"},
+  "SHA": {"name": "Sharmin Akter", "title": "Lecturer, Dept. of Science & Humanities, BAIUST (Sec A + B)", "group": "Inter-Department"},
+  "SH":  {"name": "Saud Hasan", "title": "District & Sessions Judge, Cumilla", "group": "Adjunct"},
+  "JF":  {"name": "Dr. Jannatul Ferdous", "title": "Associate Professor, Comilla University", "group": "Adjunct"},
+  "SAM": {"name": "Sabbir Ahmed Mukim", "title": "Advocate", "group": "Adjunct"},
+  "RIH": {"name": "Md. Rafiqul Islam Hossaini", "title": "Advocate", "group": "Adjunct"},
+  "MD":  {"name": "Manik Das", "title": "Joint District & Sessions Judge, Cumilla", "group": "Adjunct"},
+  "TBD": {"name": "To Be Decided", "title": "Teacher not assigned yet", "group": "Placeholder"}
+}

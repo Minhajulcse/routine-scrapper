@@ -1,0 +1,9 @@
+__pycache__/
+*.db
+debug/
+.venv/
+
+.venv/
+__pycache__/
+*.pyc
+scraper/.venv/
